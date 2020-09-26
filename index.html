@@ -1,0 +1,1457 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">-->
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="aos-master/dist/aos.css">
+    
+    
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <!-- Compiled and minified JavaScript -->
+  <!--bootstrap-->
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <title>PCOVID-19</title>
+    <link rel="icon" href="images/2.jpg" type="image/jpg">
+    <style>
+        table { 
+      width: 100%; 
+      border-collapse:separate; 
+    }
+    .searchForm {
+        position: relative;
+    }
+    .customSelect {
+        width: 100%;
+        max-width: 370px;
+    }
+    .searchForm.type2 input[type="search"] {
+        background: #fff;
+        border: 2px solid #959595;
+    }
+    
+    .searchForm input[type="search"] {
+        display: inline-block;
+        width: 100%;
+        max-width: 505px;
+        height: 52px;
+        padding: 11px 0 11px 20px;
+        font-size: 17px;
+        line-height: 19px;
+        color: #222;
+        font-style: normal;
+        background-color: #f1f1f1;
+        background-image: none;
+        border: 1px solid #8196a1;
+        border-radius: 0;
+        -webkit-transition: none;
+        transition: none;
+    }
+    .searchForm input[type="submit"] {
+        background: transparent url(https://www.solodev.com/assets/news-events-tabs/search-ico.png) no-repeat center center;
+        font-size: 0;
+        color: transparent;
+        border: 0;
+        width: 52px;
+        height: 52px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .dropdownCategories {
+        display: inline-block;
+        width:100%;
+        max-width: 505px;
+        height: 52px;
+        padding: 15px 0 11px;
+        font-size: 17px;
+        line-height: 19px;
+        color: #222;
+        font-style: normal;
+        background: #fff;
+        border: 2px solid #959595;
+        background-image: none;
+        border-radius: 0;
+        -webkit-transition: none;
+        transition: none;
+    }
+    .dropdownCategories select {
+      width: 100%;
+      padding: 0 20px;
+      border: 0px;
+      outline: none;
+    }
+    
+    .nav-pills > li > a {
+        border-radius: 0;
+        font-size: 18px;
+        padding: 6px 18px;
+    }
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+        color: #fff;
+        background-color: #662d91;
+    }
+    
+    .tab-content {
+        margin: 50px 0 20px 0;
+    }
+    .media > .pull-left {
+        margin-right: 29px;
+    }
+    .media .dateEl {
+        display: inline-block;
+        text-align: center;
+        background: #f9f9f9;
+        padding: 18px 0 25px 0;
+        color: #173d51;
+        font-size: 16px;
+        font-weight: 700;
+        width: 113px;
+        text-transform: uppercase;
+    }
+    .media .dateEl em {
+        display: block;
+        color: #662d91;
+        font-size: 42px;
+        line-height: 1;
+        margin-bottom: 5px;
+        font-style: normal;
+    }
+    .media .media-heading a {
+        color: #022235;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .media .meta-data {
+        margin: 0 0 7px 0;
+    }
+    .media .longDate, .media .timeEl {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 14px;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-weight: 700;
+        color: #636465;
+        text-transform: uppercase;
+        min-height: 16px;
+    }
+    .media .longDate {
+        background: transparent url(../images/ico-calendar.png) no-repeat left top;
+        padding: 0 10px 0 24px;
+        border-right: 1px solid #eb5b4c;
+        margin-right: 3px;
+    }
+    #tab1.tab-pane .media .longDate {
+        border-right: none;
+    }
+    .blogPost--small {
+        color: #7c7b7b;
+        margin: 20px 30px 40px 0;
+    }
+    .blogPost--small .media > .pull-left {
+        margin-right: 25px;
+    }
+    .blogPost--small a {
+        color: #662d91;
+    }
+    .blogPost--small .date, .blogPost--small .dateEl2 {
+        display: block;
+        text-align: center;
+        padding: 18px 0 25px 0;
+        color: #fff;
+        background: #662d91;
+        width: 113px;
+    }
+    .blogPost--small .date span, .blogPost--small .dateEl2 span {
+        display: inline-block;
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: 0em;
+        text-indent: -0.1em;
+        color: #fff;
+        font-weight: bold;
+    }
+    .blogPost--small .date small, .blogPost--small .dateEl2 small {
+        display: block;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .blogPost--small h4 {
+        margin: 0 0 12px 0;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    
+    
+    
+    .btn-default {
+        color: #fff;
+        font-size: 14px;
+        background-color: #662d91;
+        border-radius : 0px;
+    }
+    
+    .hey{
+        font-size: 30px;
+        font-style: oblique;
+        text-decoration: underline solid;
+    
+        font-weight: 500;
+    
+    }
+    .hey1{
+        text-decoration: underline solid;
+    }
+    h7{
+        font-size: 40px;
+        font-style: oblique;
+        font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        font-weight: 500;
+         
+    }
+    .header1{
+        font-size: 50px;
+        font-weight: 700;
+        font-style: oblique;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .collapsible-header{
+        font-weight:bold;
+        background: transparent;
+        font-family:'Times New Roman';
+        font-size: 20px;
+    }
+    .collapsible-body{
+        font-weight:bold;
+        background: transparent;
+        font-family:'Times New Roman';
+        font-size: 20px;
+    }
+    h1 {
+        
+        font-family: verdana;
+        font-weight: bold;
+        margin-top: 0px;
+        margin-bottom: 1px;
+        }
+     
+       h4 {
+        margin-left: 40px;
+        font-family: impact;
+        }
+    
+    .collapsible-header:hover
+    {
+      color:teal;
+      border-left: 2px solid teal;
+      text-decoration: underline;
+    }
+    .searchForm {
+        position: relative;
+    }
+    .customSelect {
+        width: 100%;
+        max-width: 370px;
+    }
+    .searchForm.type2 input[type="search"] {
+        background: #fff;
+        border: 2px solid #959595;
+    }
+    
+    .searchForm input[type="search"] {
+        display: inline-block;
+        width: 100%;
+        max-width: 505px;
+        height: 52px;
+        padding: 11px 0 11px 20px;
+        font-size: 17px;
+        line-height: 19px;
+        color: #222;
+        font-style: normal;
+        background-color: #f1f1f1;
+        background-image: none;
+        border: 1px solid #8196a1;
+        border-radius: 0;
+        -webkit-transition: none;
+        transition: none;
+    }
+    .searchForm input[type="submit"] {
+        background: transparent url(https://www.solodev.com/assets/news-events-tabs/search-ico.png) no-repeat center center;
+        font-size: 0;
+        color: transparent;
+        border: 0;
+        width: 52px;
+        height: 52px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .dropdownCategories {
+        display: inline-block;
+        width:100%;
+        max-width: 505px;
+        height: 52px;
+        padding: 15px 0 11px;
+        font-size: 17px;
+        line-height: 19px;
+        color: #222;
+        font-style: normal;
+        background: #fff;
+        border: 2px solid #959595;
+        background-image: none;
+        border-radius: 0;
+        -webkit-transition: none;
+        transition: none;
+    }
+    .dropdownCategories select {
+      width: 100%;
+      padding: 0 20px;
+      border: 0px;
+      outline: none;
+    }
+    
+    .nav-pills > li > a {
+        border-radius: 0;
+        font-size: 18px;
+        padding: 6px 18px;
+    }
+    .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+        color: #fff;
+        background-color: #662d91;
+    }
+    
+    .tab-content {
+        margin: 50px 0 20px 0;
+    }
+    .media > .pull-left {
+        margin-right: 29px;
+    }
+    .media .dateEl {
+        display: inline-block;
+        text-align: center;
+        background: #f9f9f9;
+        padding: 18px 0 25px 0;
+        color: #173d51;
+        font-size: 16px;
+        font-weight: 700;
+        width: 113px;
+        text-transform: uppercase;
+    }
+    .media .dateEl em {
+        display: block;
+        color: #662d91;
+        font-size: 42px;
+        line-height: 1;
+        margin-bottom: 5px;
+        font-style: normal;
+    }
+    .media .media-heading a {
+        color: #022235;
+        font-size: 21px;
+        text-transform: uppercase;
+    }
+    h4{
+        font-size: 18px;
+    }
+    .media .meta-data {
+        margin: 0 0 7px 0;
+    }
+    .media .longDate, .media .timeEl {
+        display: inline-block;
+        font-size: 14px;
+        line-height: 14px;
+        font-family: 'PT Sans Narrow', sans-serif;
+        font-weight: 700;
+        color: #636465;
+        text-transform: uppercase;
+        min-height: 16px;
+    }
+    .media .longDate {
+        background: transparent url(../images/ico-calendar.png) no-repeat left top;
+        padding: 0 10px 0 24px;
+        border-right: 1px solid #eb5b4c;
+        margin-right: 3px;
+    }
+    #tab1.tab-pane .media .longDate {
+        border-right: none;
+    }
+    .blogPost--small {
+        color: #7c7b7b;
+        margin: 20px 30px 40px 0;
+    }
+    .blogPost--small .media > .pull-left {
+        margin-right: 25px;
+    }
+    .blogPost--small a {
+        color: #662d91;
+    }
+    .blogPost--small .date, .blogPost--small .dateEl2 {
+        display: block;
+        text-align: center;
+        padding: 18px 0 25px 0;
+        color: #fff;
+        background: #662d91;
+        width: 113px;
+    }
+    .blogPost--small .date span, .blogPost--small .dateEl2 span {
+        display: inline-block;
+        font-size: 42px;
+        line-height: 1;
+        letter-spacing: 0em;
+        text-indent: -0.1em;
+        color: #fff;
+        font-weight: bold;
+    }
+    .blogPost--small .date small, .blogPost--small .dateEl2 small {
+        display: block;
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    .blogPost--small h4 {
+        margin: 0 0 12px 0;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+    
+    
+    
+    .btn-default {
+        color: #fff;
+        font-size: 14px;
+        background-color: #662d91;
+        border-radius : 0px;
+    }
+    
+    /* Zebra striping */
+    tr:nth-of-type(odd) { 
+      background: #eee; 
+    }
+    th { 
+      background: #333; 
+      color: white; 
+      font-weight: bold; 
+    }
+    td, th { 
+      padding: 6px; 
+      border: 1px solid #ccc; 
+      text-align: left; 
+    }
+    .hey2{
+        color: red;
+        font-size: smaller;
+        font-weight: 500;
+    font-style: normal;
+    }
+   
+    </style>
+</head>
+<body>
+    <div class="hd rw" style="text-align: center;">
+        <div class="cl-1" style="text-align: center;"><img src="images/2.jpg" alt="" style="width:100%;height:100%;"></div>
+        <div class="cl-11" style="margin-bottom: 0; text-align: center;"><span style="font-size:150%; font-family:Montserrat;"> PCOVID-19<br>Stay Home..Stay Safe</span></div>
+        
+
+    </div>
+    
+    <nav class="navbar navbar-inverse " id="home">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">PCOVID-19</a>
+          </div>
+          <ul class="nav navbar-nav" style="display: inline-block; width: 85%;
+          text-align: center;">
+            
+            <li><a href="#news"><span style="font-size: 20;">News Update</span> </a></li>
+            <li><a href="#track"><span style="font-size: 20;">Tracker</span> </a></li>
+            <li><a href="#fq"><span style="font-size: 20;">FAQ</span> </a></li>
+            <li><a href="#help"><span style="font-size: 20;">Helpline Numbers</span> </a></li>
+            <li><a href="#que"><span style="font-size: 20;">Queries</span> </a></li>
+            <li><a href="#about"><span style="font-size: 20;">About</span> </a></li>
+          </ul>
+          <button class="btn btn-danger navbar-btn">Emergency</button>
+        </div>
+      </nav>
+     <div class="sect">
+
+     </div>
+  <!--their work-->
+  <div style="padding-top:30px;padding-left: 100px;">  
+
+    <h3 class=" center " style="text-align:right;padding-right: 550px;text-decoration: underline;font-size: 50px;font-weight: 600;font-family: 'Times New Roman', Times, serif;" id="news">EVENTS & NEWS</h3>
+    
+    <hr>
+    <div class="row">
+    
+      <div class="col l12" style="padding-left: 575px;">
+        <ul class="nav nav-pills" role="tablist">
+          <li class="active">
+            <a data-toggle="tab" href="#tab1" role="tab">News</a>
+          </li>
+          <li>
+            <a data-toggle="tab" href="#tab2" role="tab">Events</a>
+          </li>
+        </ul>
+      </div>
+    </div><!-- / row -->
+    <hr>
+    <div class="tab-content">
+      <div class="tab-pane fade in active" id="tab1">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="media">
+              <a class="pull-left" href="#"><span class="dateEl"><em>26</em>MAR</span></a>
+              <div class="media-body">
+                <h5 class="media-heading">
+                  <a href="#" style="font-size: 18px;font-weight: 600;font-style:oblique;">CDC Issues Domestic Travel Advisory for New York,New Jersey,and Connecticut</a>
+                </h5>
+                <div class="meta-data">
+                  <span class="longDate">Mar,26 2020</span> <span class="timeEl">12:00pm - 02:00pm</span>
+                </div>
+                <p>
+               
+                </p>
+              </div><!-- / media-body -->
+            </div><!-- / media -->
+            <div class="media">
+              <a class="pull-left" href="#"><span class="dateEl"><em>27</em>MAR</span></a>
+              <div class="media-body">
+                <h5 class="media-heading">
+                  <a href="#"style="font-size: 18px;font-weight: 600;font-style:oblique;">CDC Statement on COVID-19 Apple App</a>
+                </h5>
+                <div class="meta-data">
+                  <span class="longDate">Mar 27, 2020</span> <span class="timeEl">06:00pm - 07:30pm</span>
+                </div>
+                <p>
+                  
+                </p>
+              </div><!-- / media-body -->
+            </div><!-- / media -->
+            <div class="media">
+              <a class="pull-left" href="#"><span class="dateEl"><em>26</em>MAR</span></a>
+              <div class="media-body">
+                <h5 class="media-heading">
+                  <a href="#"style="font-size: 18px;font-weight: 600;font-style:oblique;">CDC Statement on Self-Quarantine Guidance for Greater New York City</a>
+                </h5>
+                <div class="meta-data">
+                  <span class="longDate">Mar 26, 2020</span> <span class="timeEl">05:30pm - 07:30pm</span>
+                </div>
+                <p>
+                  
+                </p>
+              </div><!-- / media-body -->
+            </div><!-- / media -->
+          </div><!-- / .col-md-6 -->
+          <div class="col-md-6">
+            <div class="media">
+              <a class="pull-left" href="#"><span class="dateEl"><em>26</em>MAR</span></a>
+              <div class="media-body">
+                <h5 class="media-heading">
+                  <a href="#"style="font-size: 18px;font-weight: 600;font-style:oblique;">AUTISM PREVALENCE RISES</a>
+                </h5>
+                <div class="meta-data">
+                  <span class="longDate">Mar 26, 2020</span> <span class="timeEl">06:00pm - 08:00pm</span>
+                </div>
+                <p>
+                </p>
+              </div><!-- / media-body -->
+            </div><!-- / media -->
+            <div class="media">
+              <a class="pull-left" href="#"><span class="dateEl"><em>25</em>MAR</span></a>
+              <div class="media-body">
+                <h5 class="media-heading">
+                  <a href="#"style="font-size: 18px;font-weight: 600;font-style:oblique;">TIPS FOR FORMER SMOKERS</a>
+                </h5>
+                <div class="meta-data">
+                  <span class="longDate">MAR 25, 2020</span> <span class="timeEl">10:00am - 12:00pm</span>
+                </div>
+                <p>
+                  
+                </p>
+              </div><!-- / media-body -->
+            </div><!-- / media -->
+            <div class="media">
+              <a class="pull-left" href="#"><span class="dateEl"><em>24</em>MAR</span></a>
+              <div class="media-body">
+                <h5 class="media-heading">
+                  <a href="#"style="font-size: 18px;font-weight: 600;font-style:oblique;">HIGHER DAILY COUNT</a>
+                </h5>
+                <div class="meta-data">
+                  <span class="longDate">Mar 24, 2020</span> <span class="timeEl">10:00am - 12:00pm</span>
+                </div>
+                <p>
+                </p>
+              </div><!-- / media-body -->
+            </div><!-- / media -->
+          </div><!-- / .col-md-6 -->
+        </div><!-- / row -->
+        <div class="text-center">
+          <br>
+          <a class="btn btn-default" href="#">SEE ALL EVENTS</a>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="tab2">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="blogPost--small">
+              <div class="media">
+                <span class="pull-left"><a href="#"><span class="date"><span>2</span> <small>APR</small></span></a></span>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="#"style="font-size: 18px;font-weight: 600;font-style:oblique;">BLOWING CANDLES</a>
+                  </h5>
+                  <p>
+                    Prime Minister Narendra Modi on Friday appealed for a 9-minute blackout at 9 pm on Sunday, urging citizens to light a lamp, candle or shine a mobile flashlight during the period.
+                  </p>
+                </div>
+              </div>
+            </div><!-- / blogPost -->
+            <div class="blogPost--small">
+              <div class="media">
+                <span class="pull-left"><a href="#"><span class="date"><span>1</span> <small>APR</small></span></a></span>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="#"style="font-size: 18px;font-weight: 600;font-style:oblique;">TABLIGHI JAMAAT INCIDENT</a>
+                  </h5>
+                <p>
+                    Tablighi Jamaat incident is being exploited to blame all Muslims for COVID19. The congregation began on March 13 and the Health Ministry had said on the same day that CoronaVirus is not a health emergency
+                </p>
+                </div>
+              </div>
+            </div><!-- / blogPost -->
+          </div><!-- / .col-md-6 -->
+          <div class="col-md-6">
+            <div class="blogPost--small">
+              <div class="media">
+                <span class="pull-left"><a href="#"><span class="date"><span>1</span> <small>APR</small></span></a></span>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="#"style="font-size: 18px;font-weight: 600;font-style:oblique;">SALE OF HAND-SANITIZERS</a>
+                  </h5>
+                 <p>
+                    Liquor firms in India including Amrut Distilleries and John Distilleries will approach state excise department on Monday to seek clarification on the way forward on hand sanitizers manufacturing at their plants as an effort to compensate short supply of the product in the wake of COVID-19 outbreak.
+                 </p>
+                </div>
+              </div>
+            </div><!-- / blogPost -->
+            <div class="blogPost--small">
+              <div class="media">
+                <span class="pull-left"><a href="#"><span class="date"><span>22</span> <small>MAR</small></span></a></span>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="#"style="font-size: 18px;font-weight: 600;font-style:oblique;">JANTA CURFEW</a>
+                  </h5>
+                  <p>
+                    Janata curfew (transl. People's curfew) was an effort to combat coronavirus spread, introduced by the Prime Minister of India, Narendra Modi, in the wake of the 2020 coronavirus pandemic in India. On 19 March 2020, the Prime Minister implored all citizens of India to observe a self-imposed 'curfew' from 7 am to 9 pm IST on Sunday, 22 March 2020 to help reduce community spreading of coronavirus disease in India On 24 March, the prime minister announced that India go under 'total lock-down' for the next 21 days.
+                  </p>
+                </div>
+              </div>
+            </div><!-- / blogPost -->
+          </div><!-- / row -->
+          <div class="text-center">
+            <br>
+            <a class="btn btn-default center" href="#">SEE ALL NEWS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+                
+  </div>
+<section style="background-color:white;padding-top: 40px;">
+<section class="center">
+<h3 class="header1"  style="text-decoration: underline solid; text-align: center; " id="track">INDIA COVID-19 TRACKER</h3><br><br>
+<div class="row" style="text-align: center;">
+    <div class="col l3">
+        <h7 class="hey1  text-darken-1" style="color: #eb5b4c;">CONFIRMED</h7>
+        <p class="hey text-darken-1">67152(+4213)</p>
+    </div>
+    <div class="col l3">
+        <h7 class="hey1 blue-text text-darken-1" style="color: blue;">ACTIVE</h7>
+        <p class="hey blue-text text-darken-1">44029</p>
+    </div>
+    <div class="col l3">
+        <h7 class="hey1 green-text text-darken-1" style="color: green;">RECOVERED</h7>
+        <p class="hey green-text text-darken-1">20917(+89)</p>
+    </div>
+    <div class="col l3">
+        <h7 class="hey1 grey-text text-darken-1" style="color: grey;">DEATH</h7>
+        <p class="hey grey-text text-darken-1">2206(+97)</p>
+    </div>
+</div>
+</section>
+<section>
+<table class="responsive-table centered">
+    <thead>
+    <tr>
+        <th>State/UT</th>
+        <th>Total Cases</th>
+        <th>Active cases</th>
+        <th>Recovered</th>
+        <th>Deaths</th>
+    </tr>
+    </thead>
+    <tbody>
+   <tr>
+        <td>MAHARASHTRA</td>
+        <td>22171</td>
+        <td>17140</td>
+        <td>4199</td>
+        <td>832</td>
+    </tr>
+    <tr>
+        <td>TAMIL NADU</td>
+        <td>7204</td>
+        <td>5198</td>
+        <td>1959</td>
+        <td>47</td>
+    </tr>
+    <tr>
+        <td>DELHI</td>
+        <td>6923</td>
+        <td>4781</td>
+        <td>2069</td>
+        <td>73</td>
+    </tr>
+    <tr>
+        <td>KERALA</td>
+        <td>512</td>
+        <td>19</td>
+        <td>489</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>UTTAR PRADESH</td>
+        <td>3467</td>
+        <td>1740</td>
+        <td>1653</td>
+        <td>74</td>
+    </tr>
+    <tr>
+        <td>ANDHRA PRADESH</td>
+        <td>1980</td>
+        <td>1010</td>
+        <td>925</td>
+        <td>45</td>
+    </tr>
+    <tr>
+        <td>RAJASTHAN</td>
+        <td>3814</td>
+        <td>1531</td>
+        <td>2176</td>
+        <td>107</td>
+    </tr>
+    <tr>
+        <td>TELANGANA</td>
+        <td>1196</td>
+        <td>416</td>
+        <td>750</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>KARNATAKA</td>
+        <td>848</td>
+        <td>393</td>
+        <td>424</td>
+        <td>31</td>
+    </tr>
+    <tr>
+        <td>MADHYA PRADESH</td>
+        <td>3614</td>
+        <td>1723</td>
+        <td>1676</td>
+        <td>215</td>
+    </tr>
+    <tr>
+        <td>GUJARAT</td>
+        <td>8194</td>
+        <td>5156</td>
+        <td>2545</td>
+        <td>493</td>
+    </tr>
+    <tr>
+        <td>JAMMU AND KASHMIR</td>
+        <td>861</td>
+        <td>469</td>
+        <td>383</td>
+        <td>9</td>
+    </tr>
+    <tr>
+        <td>HARYANA</td>
+        <td>703</td>
+        <td>393</td>
+        <td>300</td>
+        <td>10</td>
+    </tr>
+    <tr>
+        <td>WEST BENGAL</td>
+        <td>1939</td>
+        <td>1337</td>
+        <td>417</td>
+        <td>185</td>
+    </tr>
+    <tr>
+        <td>PUNJAB</td>
+        <td>1823</td>
+        <td>1626</td>
+        <td>166</td>
+        <td>31</td>
+    </tr>
+    <tr>
+        <td>BIHAR</td>
+        <td>696</td>
+        <td>325</td>
+        <td>365</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>CHANDIGARH</td>
+        <td>169</td>
+        <td>143</td>
+        <td>24</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>LADAKH</td>
+        <td>42</td>
+        <td>21</td>
+        <td>21</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>ANDAMAN AND NICOBAR ISLANDS</td>
+        <td>11</td>
+        <td>1</td>
+        <td>10</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>UTTARAKHAND</td>
+        <td>33</td>
+        <td>0</td>
+        <td>33</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>CHHATTISGARH</td>
+        <td>59</td>
+        <td>10</td>
+        <td>49</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>GOA</td>
+        <td>7</td>
+        <td>0</td>
+        <td>7</td>
+        <td>0</td>
+    </tr>
+         <tr>
+            <td>ASSAM</td>
+            <td>63</td>
+            <td>27</td>
+            <td>34</td>
+            <td>2</td>
+        </tr>
+    <tr>
+        <td>HIMACHAL PRADESH</td>
+        <td>55</td>
+        <td>14</td>
+        <td>39</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>ODISHA</td>
+        <td>377</td>
+        <td>306</td>
+        <td>68</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>PUDUCHERY</td>
+        <td>9</td>
+        <td>3</td>
+        <td>6</td>
+        <td>0</td>
+    </tr>
+    <tr>
+            <td>JHARKHAND</td>
+            <td>157</td>
+            <td>76</td>
+            <td>78</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>MANIPUR</td>
+            <td>2</td>
+            <td>0</td>
+            <td>2</td>
+            <td>0</td>
+        </tr>
+         <tr>
+            <td>TRIPURA</td>
+            <td>150</td>
+            <td>148</td>
+            <td>2</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>ARUNACHAL PRADESH</td>
+            <td>1</td>
+            <td>0</td>
+            <td>1</td>
+            <td>0</td>
+        </tr>
+         <tr>
+            <td>DADRA AND NAGAR HAVELI</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <td>MIZORAM</td>
+            <td>1</td>
+            <td>1</td>
+            <td>0</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th class="center">TOTAL</th>
+            <th class="center">67152</th>
+            <th class="center">44029</th>
+            <th class="center">20917</th>
+            <th class="center">2206</th>
+        </tr>
+    </tbody>
+</table>
+</section>   
+</section>
+
+  <section style="padding-top: 60px;">
+    <div><h1 class="center" style="text-decoration: underline; text-align: center;" id="fq">FREQUENTLY ASKED QUESTIONS<h1><br></div>
+        
+
+
+        <h4>Coronavirus Disease 2019 Basics</h4>
+        <ul class="collapsible popout"  >
+            <li>
+                <div class="collapsible-header">What is novel coronavirus? </div>
+                <div class="collapsible-body"><span>A novel coronavirus is a new coronavirus that has not been previously identified. The virus causing coronavirus disease 2019 (COVID-19), is not the same as the coronaviruses that commonly circulate among humans and cause mild illness, like the common cold.
+    
+                    A diagnosis with coronavirus 229E, NL63, OC43, or HKU1 is not the same as a COVID-19 diagnosis. Patients with COVID-19 will be evaluated and cared for differently than patients with a common coronavirus diagnosis.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"> Why is the disease being called coronavirus disease 2019,COVID-19?</div>
+                <div class="collapsible-body"><span>On February 11, 2020 the World Health Organization announced an official name for the disease that is causing the 2019 novel coronavirus outbreak, first identified in Wuhan China. The name of this disease is coronavirus disease 2019, abbreviated as COVID-19. In COVID-19, ‘CO’ stands for ‘corona,’ ‘VI’ for ‘virus,’ and ‘D’ for disease. Formerly, this disease was referred to as “2019 novel coronavirus” or “2019-nCoV”.
+    
+                    There are many types of human coronaviruses including some that commonly cause mild upper-respiratory tract illnesses. COVID-19 is a new disease, caused by a novel (or new) coronavirus that has not previously been seen in humans. The name of this disease was selected following the World Health Organization (WHO) best practiceexternal icon for naming new human infectious diseases.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Why might someone blame or avoid individuals and groups (create stigma) because of COVID-19?</div>
+                <div class="collapsible-body"><span>People in the U.S. may be worried or anxious about friends and relatives who are living in or visiting areas where COVID-19 is spreading. Some people are worried about getting the disease from these people. Fear and anxiety can lead to social stigma, for example, toward people who live in certain parts of the world, people who have traveled internationally, people who were in quarantine, or healthcare professionals.
+    
+                    Stigma is discrimination against an identifiable group of people, a place, or a nation. Stigma is associated with a lack of knowledge about how COVID-19 spreads, a need to blame someone, fears about disease and death, and gossip that spreads rumors and myths.
+                    
+                    Stigma hurts everyone by creating more fear or anger toward ordinary people instead of focusing on the disease that is causing the problem.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">How can people help stop stigma related to COVID-19?</div>
+                <div class="collapsible-body"><span>People can fight stigma by providing social support in situations where you notice this is occurring. Stigma affects the emotional or mental health of stigmatized groups and the communities they live in. Stopping stigma is important to making communities and community members resilient. See resources on mental health and coping during COVID-19. Everyone can help stop stigma related to COVID-19 by knowing the facts and sharing them with others in your community.</span></div>
+            </li>
+        </ul>
+    
+    
+    <br><br >
+    
+        <h4>How COVID-19 Spreads</h4>
+        <ul class="collapsible popout">
+            <li>
+              <div class="collapsible-header">What is the source of the virus?</div>
+              <div class="collapsible-body"><span>COVID-19 is caused by a coronavirus called SARS-CoV-2. Coronaviruses are a large family of viruses that are common in people and may different species of animals, including camels, cattle, cats, and bats.  Rarely, animal coronaviruses can infect people and then spread between people. This occurred with MERS-CoV and SARS-CoV, and now with the virus that causes COVID-19. More information about the source and spread of COVID-19 is available on the Situation Summary: Source and Spread of the Virus.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">How does the virus spread?</div>
+              <div class="collapsible-body"><span>The virus that causes COVID-19 is thought to spread mainly from person to person, mainly through respiratory droplets produced when an infected person coughs or sneezes. These droplets can land in the mouths or noses of people who are nearby or possibly be inhaled into the lungs. Spread is more likely when people are in close contact with one another (within about 6 feet).
+    
+                COVID-19 seems to be spreading easily and sustainably in the community (“community spread”) in many affected geographic areas. Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected.
+                
+                Learn what is known about the spread of newly emerged coronaviruses.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">Why are we seeing a rise in cases?</div>
+              <div class="collapsible-body"><span>The number of cases of COVID-19 being reported in the United States is rising due to increased laboratory testing and reporting across the country. The growing number of cases in part reflects the rapid spread of COVID-19 as many U.S. states and territories experience community spread. More detailed and accurate data will allow us to better understand and track the size and scope of the outbreak and strengthen prevention and response efforts.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Can someone who has had COVID-19 spread the illness to others?</div>
+                <div class="collapsible-body"><span>The virus that causes COVID-19 is spreading from person-to-person. People are thought to be most contagious when they are symptomatic (the sickest). That is why CDC recommends that these patients be isolated either in the hospital or at home (depending on how sick they are) until they are better and no longer pose a risk of infecting others. More recently the virus has also been detected in asymptomatic persons.
+    
+                    How long someone is actively sick can vary so the decision on when to release someone from isolation is made using a test-based or non-test-based strategy (i.e. time since illness started and time since recovery) in consultation with state and local public health officials. The decision involves considering the specifics of each situation, including disease severity, illness signs and symptoms, and the results of laboratory testing for that patient.
+                    
+                    Learn more about CDC’s guidance on when to release someone from isolation and discharge hospitalized patients with COVID-19. For information on when someone who has been sick with COVID-19 is able to stop home isolation see Interim Guidance for Discontinuation of In-Home Isolation for Patients with COVID-19.
+                    
+                    Someone who has been released from isolation is not considered to pose a risk of infection to others.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Can someone who has been quarantined for COVID-19 spread the illness to others?</div>
+                <div class="collapsible-body"><span>Quarantine means separating a person or group of people who have been exposed to a contagious disease but have not developed illness (symptoms) from others who have not been exposed, in order to prevent the possible spread of that disease. Quarantine is usually established for the incubation period of the communicable disease, which is the span of time during which people have developed illness after exposure. For COVID-19, the period of quarantine is 14 days from the last date of exposure because the incubation period for this virus is 2 to 14 days. Someone who has been released from COVID-19 quarantine is not considered a risk for spreading the virus to others because they have not developed illness during the incubation period.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Can the virus that causes COVID-19 be spread through food, including restaurant take out, refrigerated or frozen packaged food?</div>
+                <div class="collapsible-body"><span>Coronaviruses are generally thought to be spread from person to person through respiratory droplets. Currently, there is no evidence to support transmission of COVID-19 associated with food. Before preparing or eating food it is important to always wash your hands with soap and water for at least 20 seconds for general food safety. Throughout the day use a tissue to cover your coughing or sneezing, and wash your hands after blowing your nose, coughing or sneezing, or going to the bathroom.
+    
+                    It may be possible that a person can get COVID-19 by touching a surface or object, like a packaging container, that has the virus on it and then touching their own mouth, nose, or possibly their eyes, but this is not thought to be the main way the virus spreads.
+                    
+                    In general, because of poor survivability of these coronaviruses on surfaces, there is likely very low risk of spread from food products or packaging.
+                    
+                    Learn what is known about the spread of COVID-19.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Can I get sick with COVID-19 if it is on food?</div>
+                <div class="collapsible-body"><span>Based on information about this novel coronavirus thus far, it seems unlikely that COVID-19 can be transmitted through food – additional investigation is needed.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Will warm weather stop the outbreak of COVID-19?</div>
+                <div class="collapsible-body"><span>It is not yet known whether weather and temperature affect the spread of COVID-19. Some other viruses, like those that cause the common cold and flu, spread more during cold weather months but that does not mean it is impossible to become sick with these viruses during other months.  There is much more to learn about the transmissibility, severity, and other features associated with COVID-19 and investigations are ongoing.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">What is community spread?</div>
+                <div class="collapsible-body"><span>Community spread means people have been infected with the virus in an area, including some who are not sure how or where they became infected.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">What temperature kills the virus that causes COVID-19?</div>
+                <div class="collapsible-body"><span>Generally coronaviruses survive for shorter periods at higher temperatures and higher humidity than in cooler or dryer environments. However, we don’t have direct data for this virus, nor do we have direct data for a temperature-based cutoff for inactivation at this point. The necessary temperature would also be based on the materials of the surface, the environment, etc. Regardless of temperature please follow CDC’s guidance for cleaning and disinfection.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Can mosquitoes or ticks spread the virus that causes COVID-19?</div>
+                <div class="collapsible-body"><span>At this time, CDC has no data to suggest that this new coronavirus or other similar coronaviruses are spread by mosquitoes or ticks. The main way that COVID-19 spreads is from person to person. See How Coronavirus Spreads for more information.</span></div>
+            </li>
+          </ul>
+    
+    
+    <br><br>
+         
+    
+    
+    <h4>COVID-19 and Children</h4>
+        <ul class="collapsible popout"  >
+            <li>
+                <div class="collapsible-header"> What is the risk of my child becoming sick with COVID-19?</div>
+                <div class="collapsible-body"><span>Based on available evidence, children do not appear to be at higher risk for COVID-19 than adults. While some children and infants have been sick with COVID-19, adults make up most of the known cases to date</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">How can I protect my child from COVID-19 infection </div>
+                <div class="collapsible-body"><span>You can encourage your child to help stop the spread of COVID-19 by teaching them to do the same things everyone should do to stay healthy.
+    
+                    Avoid close contact with people who are sick.
+                    Stay home when you are sick, except to get medical care.
+                    Cover your coughs and sneezes with a tissue and throw the tissue in the trash.
+                    Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food.
+                    If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol. Always wash hands with soap and water if hands are visibly dirty.
+                    Clean and disinfect frequently touched surfaces and objects (e.g., tables, countertops, light switches, doorknobs, and cabinet handles).
+                    Launder items, including washable plush toys, as appropriate and in accordance with the manufacturer’s instructions. If possible, launder items using the warmest appropriate water setting for the items and dry items completely. Dirty laundry from an ill person can be washed with other people’s items.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"> Are the symptoms of COVID-19 different in children than in adults?</div>
+                <div class="collapsible-body"><span>No. The symptoms of COVID-19 are similar in children and adults. However, children with confirmed COVID-19 have generally presented with mild symptoms. Reported symptoms in children include cold-like symptoms, such as fever, runny nose, and cough. Vomiting and diarrhea have also been reported. It’s not known yet whether some children may be at higher risk for severe illness, for example, children with underlying medical conditions and special healthcare needs. There is much more to be learned about how the disease impacts children.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Should children wear masks? </div>
+                <div class="collapsible-body"><span>No. If your child is healthy, there is no need for them to wear a facemask. Only people who have symptoms of illness or who are providing care to those who are ill should wear masks.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">How do I prepare my children in case of COVID-19 outbreak in our community? </div>
+                <div class="collapsible-body"><span>Outbreaks can be stressful for adults and children. Talk with your children about the outbreak, try to stay calm, and reassure them that they are safe. If appropriate, explain to them that most illness from COVID-19 seems to be mild.</span></div>
+            </li>
+            <li>
+                <div class="collapsible-header"> What steps should parents take to protect children during a community outbreak?</div>
+                <div class="collapsible-body"><span>This is a new virus and we are still learning about it, but so far, there does not seem to be a lot of illness in children. Most illness, including serious illness, is happening in adults of working age and older adults. However, children do get the virus and become ill. Many schools across the country have announced dismissals for temporary periods. Keep track of school dismissals in your community. Read or watch local media sources that report school dismissals. If schools are dismissed temporarily, use alternative childcare arrangements, if needed.
+    
+                    If your child/children become sick with COVID-19, notify their childcare facility or school. Talk with teachers about classroom assignments and activities they can do from home to keep up with their schoolwork.
+                    
+                    Discourage children and teens from gathering in other public places while school is dismissed to help slow the spread of COVID-19 in the community.</span></div>
+            </li>
+           
+        </ul>
+    
+    
+         <br><br>
+         <h4>In Case of an Outbreak in Your Community</h4>
+         <ul class="collapsible popout">
+            <li>
+              <div class="collapsible-header">What should I do if there is an outbreak in my community?</div>
+              <div class="collapsible-body"><span><p>During an outbreak, stay calm and put your preparedness plan to work. Follow the steps below:</p>
+                <p><a href="https://www.cdc.gov/coronavirus/2019-ncov/prevent-getting-sick/prevention.html">Protect yourself and others</a>.</p>
+                <ul>
+                <li>Stay home if you are sick. Keep away from people who are sick. Limit close contact with others as much as possible (about 6 feet).</li>
+                </ul>
+                <p>Put your household plan into action. </p>
+                <ul>
+                <li>Stay informed about the local COVID-19 situation. Be aware of temporary school dismissals in your area, as this may affect your household&rsquo;s daily routine.</li>
+                </ul>
+                <ul>
+                <li>Continue practicing everyday preventive actions. Cover coughs and sneezes with a tissue and wash your hands often with soap and water for at least 20 seconds. If soap and water are not available, use a hand sanitizer that contains 60% alcohol. Clean frequently touched surfaces and objects daily using a regular household detergent and water.</li>
+                <li>Notify your workplace as soon as possible if your regular work schedule changes. Ask to work from home or take leave if you or someone in your household gets sick with <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/symptoms.html">COVID-19 symptoms</a>, or if your child&rsquo;s school is dismissed temporarily. <a href="https://www.cdc.govhttps://www.cdc.gov/coronavirus/2019-ncov/community/guidance-business-response.html">Learn how businesses and employers can plan for and respond to COVID-19.</a></li>
+                <li>Stay in touch with others by phone or email. If you have a chronic medical condition and live alone, ask family, friends, and health care providers to check on you during an outbreak. Stay in touch with family and friends, especially those at increased risk of developing severe illness, such as older adults and people with severe chronic medical conditions.</li>
+                </ul></span></div>
+                </li>
+                <li>
+               <div class="collapsible-header">How do I prepare my children in case of COVID-19 outbreak in our community?</div>
+               <div class="collapsible-body"><span>Outbreaks can be stressful for adults and children. Talk with your children about the outbreak, try to stay calm, and reassure them that they are safe. If appropriate, explain to them that most illness from COVID-19 seems to be mild. <a href="https://www.cdc.gov/childrenindisasters/helping-children-cope.html">Children respond differently to stressful situations than adults</a>.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header">What steps should parents take to protect children during a community outbreak?</div>
+              <div class="collapsible-body"><span><p>This is a new virus and we are still learning about it, but so far, there does not seem to be a lot of illness in children. Most illness, including serious illness, is happening in adults of working age and older adults. If there cases of COVID-19 that impact your child&rsquo;s school, the school may dismiss students. Keep track of school dismissals in your community. Read or watch local media sources that report school dismissals. If schools are dismissed temporarily, use alternative childcare arrangements, if needed.</p>
+                <p>If your child/children become sick with COVID-19, notify their childcare facility or school. Talk with teachers about classroom assignments and activities they can do from home to keep up with their schoolwork.</p>
+                <p>Discourage children and teens from gathering in other public places while school is dismissed to help slow the spread of COVID-19 in the community.</p></span></div>
+            </li>
+            <li>
+                <div class="collapsible-header">Will schools be dismissed if there is an outbreak in my community?</div>
+                <div class="collapsible-body"><span>Depending on the situation, public health officials may recommend community actions to reduce exposures to COVID-19, such as school dismissals. Read or watch local media sources that report school dismissals or and watch for communication from your child&rsquo;s school. If schools are dismissed temporarily, discourage students and staff from gathering or socializing anywhere, like at a friend&rsquo;s house, a favorite restaurant, or the local shopping mall.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header">Should I go to work if there is an outbreak in my community?</div>
+                <div class="collapsible-body"><span>Follow the advice of your local health officials. Stay home if you can. Talk to your employer to discuss working from home, taking leave if you or someone in your household gets sick with <a href="https://www.cdc.gov/coronavirus/2019-ncov/about/symptoms.html">COVID-19 symptoms</a>, or if your child&rsquo;s school is dismissed temporarily. Employers should be aware that more employees may need to stay at home to care for sick children or other sick family members than is usual in case of a community outbreak.</span></div>
+              </li>
+          </ul>
+    <br><br>
+    
+    <h4>Symptoms & Testing</h4>
+    <ul class="collapsible popout">
+        <li>
+          <div class="collapsible-header">What are the symptoms and complications that COVID-19 can cause?</div>
+          <div class="collapsible-body"><span>Current symptoms reported for patients with COVID-19 have included mild to severe respiratory illness with fever, cough, and difficulty breathing.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header">Should I be tested for COVID-19?</div>
+          <div class="collapsible-body"><span>Not everyone needs to be tested for COVID-19.</span></div>
+        </li>
+        <li>
+          <div class="collapsible-header">Where can I get tested for COVID-19?</div>
+          <div class="collapsible-body"><span>The process and locations for testing vary from place to place. Contact your state, local, tribal, or territorial department for more information, or reach out to a medical provider. State and local public health departments have received tests from CDC while medical providers are getting tests developed by commercial manufacturers. While supplies of these tests are increasing, it may still be difficult to find someplace to get tested.</span></div>
+        </li>
+    
+    </ul>
+    
+</section>
+<section style="background-color:whitesmoke; text-align: center;">
+  <h2 class="center"style="font-size: 40px;padding-yop:10px;font-weight: 700;font-family: 'Times New Roman', Times, serif;font-style: oblique;text-decoration:underline;">SOME PREVENTIVE MEASURES</h2><br><br>
+  <div class="row">
+    <div class="col l6 push-l3">
+  <p class="center" style="font-size: 20px;text-decoration:underline;font-weight: 700;font-style: oblique;font-family: Verdana, Geneva, Tahoma, sans-serif;">1)HOW TO MAKE A HAND SATIZER AT HOME?</p>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col l6 push-l3">
+  <video width="700" height="500" controls>
+
+    <source src="videos/video1.mp4" type=video/mp4>
+  </video><br>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col l6 push-l3">
+  <p class="center" style="font-size: 20px;text-decoration:underline;font-weight: 700;font-style: oblique;font-family: Verdana, Geneva, Tahoma, sans-serif;padding-top: 20px;">2)HOW TO MAKE A MASK?</p>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col l6 push-l3">
+  <video width="700" height="500" controls>
+
+    <source src="videos/Mask.mp4" type=video/mp4>
+  </video><br>
+  </div>
+  </div>
+  
+</section>
+  <section style="padding-top: 40px;">
+      <h5 style="text-align: center;font-size: 50px;font-weight: 700;font-style: oblique;font-family:Verdana, Geneva, Tahoma, sans-serif;text-decoration: underline;" id="help">HELPLINE NUMBERS</h5>  
+  <table class="responsive-table centered" style="padding-top: 20px;">
+    <thead>
+    <tr>
+        <th>States</th>
+        <th>Helpline Numbers</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td> Andhra Pradesh</td>
+        <td> 0866-2410978</td>
+        
+    </tr>
+    <tr>
+        <td> Arunachal Pradesh </td>
+        <td> 6913347770</td>
+    </tr>
+    <tr>
+        <td> Assam</td>
+        <td>011-22307145</td>
+       
+    </tr>
+    <tr>
+        <td> Bihar </td>
+        <td> 104</td>
+    </tr>
+    <tr>
+        <td>Chhattisgarh</td>
+        <td>104</td>
+    </tr>
+    <tr>
+        <td> Goa</td>
+        <td>104</td>
+        
+    </tr>
+    <tr>
+        <td> Gujarat</td>
+        <td>104</td>
+        
+    </tr>
+    <tr>
+        <td> Haryana </td>
+        <td> 8558893911</td>
+        
+    </tr>
+    <tr>
+        <td> Himachal Pradesh </td>
+        <td>104</td>
+        
+    </tr>
+    <tr>
+        <td> Jharkhand </td>
+        <td>104</td>
+        
+    </tr>
+    <tr>
+        <td> Karnataka </td>
+        <td>104</td>
+        
+    </tr>
+    <tr>
+        <td> Kerala</td>
+        <td> 0471-2552056</td>
+        
+    </tr>
+    <tr>
+        <td> Madhya Pradesh</td>
+        <td>104</td>
+        
+    </tr>
+    <tr>
+        <td> Maharashtra</td>
+        <td>020-26127394</td>
+       
+    </tr>
+    <tr>
+        <td>Manipur</td>
+        <td>3852411668</td>
+      
+    </tr>
+    <tr>
+        <td> Meghalaya</td>
+        <td>108</td>
+        
+    </tr>
+    <tr>
+        <td> Mizoram</td>
+        <td>102</td>
+        
+    </tr>
+    <tr>
+        <td> Nagaland </td>
+        <td>7005539653</td>
+       
+    </tr>
+    <tr>
+        <td> Odisha </td>
+        <td>9439994859</td>
+       
+    </tr>
+    <tr>
+        <td> Punjab</td>
+        <td>104</td>
+        
+    </tr>
+    <tr>
+        <td> Rajasthan</td>
+        <td> 0141-2225624</td>
+    
+    </tr>
+    <tr>
+        <td> Sikkim</td>
+        <td>104</td>
+       
+    </tr>
+    <tr>
+        <td> Tamil Nadu</td>
+        <td> 044-29510500</td>
+        
+    </tr>
+    <tr>
+        <td> Telangana</td>
+        <td>104</td>
+       
+    </tr>
+    <tr>
+        <td>Tripura </td>
+        <td> 0381-2315879</td>
+       
+    </tr>
+    <tr>
+            <td> Uttarakhand </td>
+            <td>104</td>
+           
+        </tr>
+        <tr>
+            <td> Uttar Pradesh</td>
+            <td>18001805145</td>
+            
+        </tr>
+        <tr>
+            <td> West Bengal</td>
+            <td> 1800313444222, 03323412600</td>
+            
+        </tr>
+        <tr>
+
+            <th style="text-align: center;">Union Territories</th>
+            <th style="text-align: center;">Helpline numbers</th>
+        </tr>
+        <tr>
+            <td> Andaman and Nicobar
+                Islands</td>
+            <td>03192-232102</td>
+            
+        </tr>
+        <tr>
+            <td> Chandigarh</td>
+            <td>9779558282</td>
+            
+        </tr>
+        <tr>
+            <td> Dadra and Nagar Haveli and Daman & Diu </td>
+            <td>104</td>
+            
+        </tr>
+        <tr>
+            <td> Delhi</td>
+            <td>011-22307145</td>
+            
+        </tr>
+        <tr>
+            <td> Jammu & Kashmir</td>
+            <td>01912520982, 0194-2440283</td>
+            
+        </tr>
+        <tr>
+            <td> Ladakh</td>
+            <td>01982256462</td>
+            
+        </tr>
+        <tr>
+            <td> Lakshadweep </td>
+            <td> 104</td>
+            
+        </tr>
+        <tr>
+            <td> Puducherry </td>
+            <td>104</td>
+            
+        </tr>
+        
+       
+    </tbody>
+</table>
+</section>
+  <!--end of their work-->
+
+    
+     <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+        <h2 class="w3-wide w3-center" style="font-size: 50px;font-weight: 700;font-family: Verdana, Geneva, Tahoma, sans-serif;font-style: oblique; text-decoration: underline;" id="que">Queries</h2>
+        <p class="w3-opacity w3-center"><i>Reach Us!</i></p>
+        <div class="w3-row w3-padding-32">
+          <div class="w3-col m6 w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker" style="width:30px"></i> Kolkata, INDIA<br>
+            <i class="fa fa-phone" style="width:30px"></i> Phone: +91 8276807347<br>
+            <i class="fa fa-envelope" style="width:30px"> </i> Email:pcovid94@gmail.com <br>
+          </div>
+          <div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+              <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                </div>
+                <div class="w3-half">
+                  <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                </div>
+              </div>
+              <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+              <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+        <a  href="https://docs.google.com/forms/d/e/1FAIpQLSeBbGXMn1nMLolnBV9iVEHtitDBxQqxP_dUK-xOimabqp-k6Q/viewform?usp=sf_link" target="_blank"  ><h1><p style="text-align:center">Register Here</p></h1><i class="fal fa-arrow-alt-right"></i></a>
+      
+    
+      <div class="w3-container w3-padding-64 " style="background-color:whitesmoke" id="us">
+        <div class="w3-content">
+          <h1 class="w3-center w3-text-grey" id="about"><b>About Us</b></h1><br>
+          <h3>We here at PCOVID19 are a group of entrepreneurs, and health experts who help people to prepare to fight against 
+              COVID19 by providing an online learning portal with good quality of prevention technique and videos which help the people to make sanitizers amd 
+              medical mask at home. Here you can learn what is COVID19 and prevent from it.
+          </h3><br>
+          
+        </div>
+      </div>
+      <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+          <a href="https://www.facebook.com/Pcovid19-107603230900299/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+          <a href="https://www.instagram.com/invites/contact/?i=olu04iajnn9h&utm_content=f4ejb3j"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+       
+        </div>
+        <p>Powered by <b>PCOVID-19</b></p>
+      </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <!--<script  type="text/javascript" src="aos-master/dist/aos.js"></script>-->  
+
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    
+        <script>
+         
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.collapsible');
+                var instances = M.Collapsible.init(elems, {accordion: false});
+            });
+        
+        </script>
+        <script>
+            var video = document.getElementById("myVideo");
+            var btn = document.getElementById("myBtn");
+            
+            function myFunction() {
+              if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+              } else {
+                video.pause();
+                btn.innerHTML = "Play";
+              }
+            }
+            </script>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  --> 
+        <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+</body>
+</html>
