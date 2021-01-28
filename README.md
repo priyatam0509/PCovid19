@@ -4,7 +4,7 @@
 You can visit our site using this [link](https://pcovid19.herokuapp.com/)
 
 # Screenshots
-<img src="https://github.com/kaushikjadhav01/Online-Food-Ordering-Web-App/blob/master/screenshots/99-banner.png">
+<img src="https://github.com/priyatam0509/PCovid19/blob/master/Screenshots/Screenshot%20(5).png">
 Find how the project looks in <b>screenshots folder</b> Or <a href="https://github.com/kaushikjadhav01/Online-Food-Ordering-Web-App/tree/master/screenshots">click here</a>
 
 
