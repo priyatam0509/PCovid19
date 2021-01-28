@@ -3,6 +3,11 @@
 
 You can visit our site using this [link](https://pcovid19.herokuapp.com/)
 
+# Screenshots
+<img src="https://github.com/kaushikjadhav01/Online-Food-Ordering-Web-App/blob/master/screenshots/99-banner.png">
+Find how the project looks in <b>screenshots folder</b> Or <a href="https://github.com/kaushikjadhav01/Online-Food-Ordering-Web-App/tree/master/screenshots">click here</a>
+
+
 ### Covid 19 website give daily update
  - *Country wise*
  - *Indian state wise*
@@ -11,15 +16,33 @@ You can visit our site using this [link](https://pcovid19.herokuapp.com/)
  ### API used for
  - [India](https://api.covid19india.org/data.json)
  - [World](https://api.covid19api.com/summary)
-
-### HTML, CSS, BOOTSTRAP, JAVASCRIPT is used for frontend program
-### NodeJS is used for backend program
-### It is hosted free on Heroku.
-_ _ _
-
+ 
+# Technologies Used
+<ul>
+<a href="#"><li>NodeJS</a></li>
+<a href="#"><li>BOOTSTRAP</a></li>
+<a href="https://www.w3.org/Style/CSS/Overview.en.html"><li>CSS</a></li>
+<a href="https://www.w3.org/TR/html52/"><li>HTML</a></li>
+<a href="https://www.javascript.com/"><li>Javascript</a></li>
+</ul>
+ 
 ## Requirements
 
 - [Node.js](https://nodejs.org/) v12 or higher.
 - [VS Code](https://code.visualstudio.com/) editor with [recommended extensions](.vscode/extensions.json)
 
+# How to Install and Use
+<ol>
+<li>After Clonning the website Move to Pcovid19 folder and do npm install.</li>
+<li>After that Just Fireup your terminal and do npm start.</li>
+<li>Your Project is ready to go.</li>
+
+</ol>
+
+# Authors
+## Priyatam Piyush
+<ul>
+<li>Github:https://github.com/priyatam0509</li>
+<li>LinkedIn:https://www.linkedin.com/in/priyatampiyush/</li>
+</ul>
 
