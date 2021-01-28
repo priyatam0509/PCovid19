@@ -1,5 +1,5 @@
 # Overview
-[PCovid19](https://pcovid19.herokuapp.com/) is a website to keep track of live COVID-19 data using APIs for both India and the World.
+[PCovid19](https://pcovid19.herokuapp.com/)  are a group of entrepreneurs, and health experts who help people to prepare to fight against COVID19 by providing an online learning portal with good quality of prevention technique. Here you can learn what is COVID19 and prevent from it.PCovid19 is a website to keep track of live COVID-19 data using APIs for both India and the World.
 
 You can visit our site using this [link](https://pcovid19.herokuapp.com/)
 
