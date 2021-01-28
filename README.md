@@ -1,5 +1,5 @@
 # Overview
-[Covid 19](https://pcovid19.herokuapp.com/) is a website to keep track of live COVID-19 data using APIs for both India and the World.
+[PCovid19](https://pcovid19.herokuapp.com/) is a website to keep track of live COVID-19 data using APIs for both India and the World.
 
 You can visit our site using this [link](https://pcovid19.herokuapp.com/)
 
