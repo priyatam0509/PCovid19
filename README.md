@@ -4,8 +4,8 @@
 You can visit our site using this [link](https://pcovid19.herokuapp.com/)
 
 # Screenshots
-<img src="https://github.com/priyatam0509/PCovid19/blob/master/Screenshots/Screenshot%20(5).png">
 <img src="https://github.com/priyatam0509/PCovid19/blob/master/Screenshots/Screenshot%20(4).png">
+<img src="https://github.com/priyatam0509/PCovid19/blob/master/Screenshots/Screenshot%20(5).png">
 Find how the project looks in <b>screenshots folder</b> Or <a href="https://github.com/priyatam0509/PCovid19/tree/master/Screenshots">click here</a>
 
 
@@ -45,5 +45,7 @@ Find how the project looks in <b>screenshots folder</b> Or <a href="https://gith
 <ul>
 <li>Github:https://github.com/priyatam0509</li>
 <li>LinkedIn:https://www.linkedin.com/in/priyatampiyush/</li>
+<li>Github:https://github.com/sameer882000</li>
+<li>LinkedIn:https://www.linkedin.com/in/sameer-sinha-4b3a40174</li>
 </ul>
 
