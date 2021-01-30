@@ -33,6 +33,12 @@ html{
 .corona-update h3{
     color: #ff7675;
 }
+
+@media (max-width: 800px) {
+    .corona-update h3{
+        margin-top: 120px;
+    } 
+  }
 .corona-update h1{
     font-size: 2rem;
     text-align: center;
