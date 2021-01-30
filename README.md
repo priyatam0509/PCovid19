@@ -45,6 +45,9 @@ Find how the project looks in <b>screenshots folder</b> Or <a href="https://gith
 <ul>
 <li>Github:https://github.com/priyatam0509</li>
 <li>LinkedIn:https://www.linkedin.com/in/priyatampiyush/</li>
+ </ul>
+ <ul>
+## Sameer Sinha
 <li>Github:https://github.com/sameer882000</li>
 <li>LinkedIn:https://www.linkedin.com/in/sameer-sinha-4b3a40174</li>
 </ul>
