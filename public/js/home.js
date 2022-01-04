@@ -1,5 +1,5 @@
 let api = 'https://api.covid19api.com/summary';
-let apiindia = 'https://api.covid19india.org/data.json';
+let apiindia = 'https://github.com/covid19india/api';
 
 
 function get(){
