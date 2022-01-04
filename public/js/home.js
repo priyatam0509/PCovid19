@@ -1,5 +1,5 @@
 let api = 'https://api.covid19api.com/summary';
-let apiindia = 'https://covid-19-apis.postman.com/';
+let apiindia = 'https://api.covid19india.org/data.json';
 
 
 function get(){
